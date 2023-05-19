@@ -2,7 +2,10 @@ package com.barisgungorr.recycleview1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.barisgungorr.LandMark
+import com.barisgungorr.LandMarkAdapter
 import com.barisgungorr.recycleview1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +28,15 @@ class MainActivity : AppCompatActivity() {
         landMarkList.add(coloseum)
         landMarkList.add(eifel)
         landMarkList.add(londonBridge)
+
+        //Adapter (Layout ile datayı birbirine bağlar
+
+        binding.RecyclerView.layoutManager = LinearLayoutManager(this)
+        val landMarkAdapter = LandMarkAdapter(landMarkList)
+        binding.RecyclerView.adapter = landMarkAdapter
+
+
+
 
 
 
