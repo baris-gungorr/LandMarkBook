@@ -13,5 +13,15 @@ class DetailsActivity : AppCompatActivity() {
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+     //   val selectedLandmark = intent.getSerializableExtra("landmark") as LandMark
+       val selectedLandmark = MySingleton.choseLandMark
+        binding.nameText.text = selectedLandmark?.name
+        binding.countryText.text = selectedLandmark?.country
+        binding.imageView.setImageResource(selectedLandmark!!.image)
+
+
+
+
     }
 }

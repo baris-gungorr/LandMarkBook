@@ -11,7 +11,4 @@ class LandMark {
         this.image = image
 
     }
-
-
-
 }
