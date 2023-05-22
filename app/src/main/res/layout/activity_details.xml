@@ -6,39 +6,52 @@
     android:layout_height="match_parent"
     tools:context="com.barisgungorr.DetailsActivity">
 
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="264dp"
+        android:layout_height="49dp"
+        android:text="LandMark Name"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="215dp"
-        android:layout_height="198dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="268dp"
+        android:layout_height="224dp"
+        app:layout_constraintBottom_toTopOf="@+id/nameText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
-        android:id="@+id/nameText"
-        android:layout_width="256dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="48dp"
-        android:text="LandMark Name"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
         android:id="@+id/countryText"
-        android:layout_width="256dp"
-        android:layout_height="63dp"
-        android:layout_marginBottom="240dp"
+        android:layout_width="277dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
         android:text="LandMark Country"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <TextView
+        android:id="@+id/textViewinfo"
+        android:layout_width="277dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/countryText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
